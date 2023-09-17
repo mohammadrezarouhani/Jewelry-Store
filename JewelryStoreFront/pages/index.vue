@@ -1,9 +1,7 @@
 <script setup>
-import TopHeader from "../layouts/TopHeader.vue";
-import Header from "../layouts/Header.vue";
+import Header from "../components/Header.vue";
 </script>
 
 <template>
-    <TopHeader></TopHeader>
     <Header></Header>
 </template>
