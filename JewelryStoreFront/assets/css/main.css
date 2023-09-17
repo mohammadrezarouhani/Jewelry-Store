@@ -39,19 +39,6 @@
   --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box !important; 
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  border: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  font-weight: normal;
-}
 
 html {
   font-size: 14px;
