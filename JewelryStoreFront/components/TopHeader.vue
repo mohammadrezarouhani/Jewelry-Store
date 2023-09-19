@@ -9,16 +9,16 @@ import SearchInput from "~/components/SearchInput.vue";
       <SearchInput />
     </div>
     <div class="basis-1/2 ">
-    <span class="p-[.8rem] text-amber-300 text-[1.4rem] float-left cursor-pointer hover:text-amber-200 flex gap-1.5 justify-center items-center">
+    <span class="p-[.8rem] text-white text-[1.4rem] float-left cursor-pointer hover:text-amber-200 flex gap-1.5 justify-center items-center">
         <font-awesome-icon :icon="['fas', 'user']" />
         <font-awesome-icon :icon="['fas', 'caret-down']" />
       </span>
 
-      <span class="p-[.8rem] text-amber-300 text-[1.4rem] float-left cursor-pointer hover:text-amber-200 flex gap-1.5 justify-center items-center">
+      <span class="p-[.8rem] text-white text-[1.4rem] float-left cursor-pointer hover:text-amber-200 flex gap-1.5 justify-center items-center">
         <font-awesome-icon :icon="['fas', 'cart-plus']" />
       </span>
 
-      <span class="p-[.8rem] text-amber-300 text-[1.4rem] float-left cursor-pointer hover:text-amber-200 flex gap-1.5 justify-center items-center">
+      <span class="p-[.8rem] text-white text-[1.4rem] float-left cursor-pointer hover:text-amber-200 flex gap-1.5 justify-center items-center">
         <font-awesome-icon :icon="['fas', 'location-dot']" />
       </span>
     </div>
