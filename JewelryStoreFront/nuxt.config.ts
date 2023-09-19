@@ -26,5 +26,11 @@ export default defineNuxtConfig({
   css: [
     "~/assets/css/main.css",
     "@fortawesome/fontawesome-svg-core/styles.css",
+    "primevue/resources/themes/lara-light-blue/theme.css"
   ],
+
+  build: {
+		transpile: ["primevue"]
+	}
+  
 });
