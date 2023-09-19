@@ -1,10 +1,9 @@
 <script setup>
-import TopHeader from "../layouts/TopHeader.vue";
-import Header from "../layouts/Header.vue";
+
+definePageMeta({
+    layout: 'index'
+})
+
 </script>
 
-<template>
-    <TopHeader></TopHeader>
-    <Header></Header>
-</template>
- 
+<template></template>

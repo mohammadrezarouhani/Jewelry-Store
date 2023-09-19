@@ -41,16 +41,8 @@
 
 html {
   font-size: 14px;
-}
-
-
-body {
-  background: var(--color-background) !important;
   direction: rtl;
-  width: 100vw;
-  height: 100vh;
   font-family: 'Vazirmatn', sans-serif !important;
+  background: var(--color-background) !important;
   user-select: none;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }

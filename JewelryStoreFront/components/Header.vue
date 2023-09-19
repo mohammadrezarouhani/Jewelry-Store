@@ -21,8 +21,8 @@
       </div>
 
       <!-- Navigation links -->
-      <div class="!visible hidden grow basis-[100%] items-center lg:!flex lg:basis-auto" id="navbarSupportedContentX"
-        data-te-collapse-item>
+      <div class=" relative !visible hidden grow basis-[100%] items-center lg:!flex lg:basis-auto"
+        id="navbarSupportedContentX" data-te-collapse-item>
         <ul class="w-full mr-auto flex flex-col lg:flex-row text-[1rem]" data-te-navbar-nav-ref>
           <li class="mb-4 lg:mb-0 lg:pr-2 text-[1.2rem] text-amber-200" data-te-nav-item-ref>
             <a class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
@@ -58,11 +58,12 @@
         <div class="px-6 text-center text-white md:px-12">
           <h1 class="mb-6 text-5xl font-bold">خوش امدید!!!</h1>
           <h3 class="mb-8 text-3xl font-bold">
-            با ما تجربه زیبایی را در ثبت سفارشات خود به همرا داشته باشید
+            با ما تجربه زیبایی را در سفارشات خود به همرا داشته باشید
           </h3>
-          <button type="button"
-            class="border border-stone-50 text-[1.3rem] w-12 h-10 inline-block text-2xl w-[10rem] h-[3.6rem] hover:text-primary rounded px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
-            data-te-ripple-init data-te-ripple-color="light">
+          <button type="button" class="border border-stone-50 text-[1.2rem] hover:text-amber-200 
+            inline-block w-[10rem] h-[3.6rem] rounded px-6 pb-[6px] pt-2  transition duration-150 ease-in-out 
+             hover:bg-neutral-100 hover:bg-opacity-10  active:text-white" data-te-ripple-init
+            data-te-ripple-color="light">
             محصولات
           </button>
         </div>
