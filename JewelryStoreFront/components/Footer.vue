@@ -1,26 +1,27 @@
 
 <template>
-    <div
-        class="bottom-[-28rem] flex flex-col justify-center items-center w-full h-[28rem] bg-gray-900 text-amber-200">
-        <div class="relative flex gap-[1rem] w-full p-5">
+    <div class="bottom-[-28rem] flex flex-col justify-center items-center w-full h-[28rem] bg-gray-900 text-amber-200">
+        <div class="relative flex items-center gap-[1rem] w-full p-5">
             <img src="logo.png" class="w-[4rem]">
-            <h1 class="flex justify-center items-center">فروشگاه آنلاین</h1>
+            <h1 class="flex justify-center items-center text-[1.2rem]">فروشگاه آنلاین</h1>
+            <div class="block">
+                <span class="p-[.4rem]">
+                    <font-awesome-icon :icon="['fas', 'phone']" />
+                </span>
+                <span>تلفن تماس:</span>&nbsp;
+                <span>+895562335</span>
+            </div>
             <a href="#top" class="absolute left-0 border border-white rounded p-[1rem] ml-[1rem] 
             hover:bg-neutral-100 hover:bg-opacity-10  active:text-white">
                 بازگشت به بالا
                 <font-awesome-icon :icon="['fas', 'caret-down']" rotation=180 />
             </a>
+
         </div>
 
-        <div class=" flex  justify-items-start w-full p-[1rem]">
-            <div class="block">
-                <span class="p-[.4rem]">
-                    <font-awesome-icon :icon="['fas', 'phone']" />
-                </span>
-                <span >تلفن تماس:</span>&nbsp;
-                <span >+895562335</span>
-            </div>
-        </div>
+        <!-- <div class=" flex  justify-items-start w-full p-[1rem]">
+
+        </div> -->
 
         <div class="flex justify-center items-center w-full h-full ">
             <!-- Right -->

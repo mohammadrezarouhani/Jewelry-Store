@@ -1,5 +1,71 @@
+<!-- @format -->
+
 <template>
-    <div class="bg-rose-200 p-[2rem] h-[40rem] w-full ">
-        Gallery
-    </div>
+  <div
+    class="card flex justify-center p-[2rem]"
+    style="direction: ltr"
+  >
+    <Galleria
+      class="border-8 border-black"
+      :value="images"
+      :responsiveOptions="responsiveOptions"
+      :numVisible="5"
+      :circular="true"
+      containerStyle="width: 80%;"
+      :showItemNavigators="true"
+      :showThumbnails="false"
+      :autoPlay="true"
+      :transitionInterval="3000"
+    >
+      <template #item="slotProps">
+        <img
+          :src="slotProps.item.itemImageSrc"
+          :alt="slotProps.item.alt"
+          style="
+            width: 100%;
+            height: 30rem;
+            display: block;
+            border-radius: 1rem;
+          "
+        />
+      </template>
+    </Galleria>
+  </div>
 </template>
+
+<script setup>
+import { ref, onMounted } from "vue";
+
+onMounted(() => {
+  images.value = [
+    {
+      itemImageSrc: "1.jpg",
+      alt: "...",
+    },
+    {
+      itemImageSrc: "2.jpg",
+      alt: "...",
+    },
+    {
+      itemImageSrc: "5.jpg",
+      alt: "...",
+    },
+  ];
+});
+
+const images = ref();
+const responsiveOptions = ref([
+  {
+    breakpoint: "991px",
+    numVisible: 4,
+  },
+  {
+    breakpoint: "767px",
+    numVisible: 3,
+  },
+  {
+    breakpoint: "575px",
+    numVisible: 1,
+  },
+]);
+</script>

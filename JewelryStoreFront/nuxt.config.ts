@@ -25,11 +25,11 @@ export default defineNuxtConfig({
   ],
   css: [
     "~/assets/css/main.css",
-    "primevue/resources/themes/lara-light-blue/theme.css"
+    "primevue/resources/themes/lara-light-blue/theme.css",
+    "primeicons/primeicons.css",
   ],
 
   build: {
-		transpile: ["primevue"]
-	}
-  
+    transpile: ["primevue"],
+  },
 });

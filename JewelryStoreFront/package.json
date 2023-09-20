@@ -22,6 +22,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "@nuxtjs/fontawesome": "^1.1.2",
+    "primeicons": "^6.0.1",
     "primevue": "^3.34.1"
   }
 }

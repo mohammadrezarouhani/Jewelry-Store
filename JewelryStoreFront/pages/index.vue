@@ -7,6 +7,6 @@ definePageMeta({
 </script>
 
 <template>
-    <Gallery/>
-    <ProductSlider/>
+    <ProductCarousel/>
+    <ProductsCard/>
 </template>
