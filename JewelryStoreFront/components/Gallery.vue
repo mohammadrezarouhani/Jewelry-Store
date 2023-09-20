@@ -2,7 +2,7 @@
 
 <template>
   <div
-    class="card flex justify-center p-[2rem]"
+    class="card flex justify-center"
     style="direction: ltr"
   >
     <Galleria
@@ -11,7 +11,7 @@
       :responsiveOptions="responsiveOptions"
       :numVisible="5"
       :circular="true"
-      containerStyle="width: 80%;"
+      containerStyle="width: 100%;"
       :showItemNavigators="true"
       :showThumbnails="false"
       :autoPlay="true"
