@@ -39,15 +39,7 @@ import { ref, onMounted } from "vue";
 onMounted(() => {
   images.value = [
     {
-      itemImageSrc: "1.jpg",
-      alt: "...",
-    },
-    {
-      itemImageSrc: "2.jpg",
-      alt: "...",
-    },
-    {
-      itemImageSrc: "5.jpg",
+      itemImageSrc: "header-1.webp",
       alt: "...",
     },
   ];

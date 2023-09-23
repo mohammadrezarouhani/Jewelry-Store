@@ -1,5 +1,5 @@
 <template>
-    <div class="card bg-gray-200" style="direction: ltr;">
+    <div class="card" style="direction: ltr;">
         <h1 class="text-center p-[1rem] text-2xl  font-bold ">محصولات خاص</h1>
         <Carousel :value="products" :numVisible="4" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000">
             <template #item="slotProps">
