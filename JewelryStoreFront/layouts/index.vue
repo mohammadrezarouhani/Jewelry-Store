@@ -1,10 +1,10 @@
-
 <template>
-  <div class="relative"> 
+  <div class="relative w-full"> 
     <TopHeader />
-    <Header />
+    <Navbar/>
+    <Hero/>
     <slot />
 
-    <Footer />
+    <Footer  class="absolute bottom-[-20rem]"/>
   </div>
 </template>

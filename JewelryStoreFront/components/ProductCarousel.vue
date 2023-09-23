@@ -1,11 +1,11 @@
 <template>
     <div class="card bg-gray-200" style="direction: ltr;">
         <h1 class="text-center p-[1rem] text-2xl  font-bold ">محصولات خاص</h1>
-        <Carousel :value="products" :numVisible="5" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000">
+        <Carousel :value="products" :numVisible="4" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000">
             <template #item="slotProps">
-                <div class="border bg-white cursor-pointer rounded-xl hover:shadow-xl hover:shadow-gray-900/10 ease-in-out duration-300 p-[1rem] m-[1rem]">
+                <div class="border bg-white cursor-pointer rounded-xl hover:shadow-xl hover:shadow-gray-900/10 ease-in-out duration-300 pb-[1rem] m-[1rem]">
                     <div class="mb-[1rem] flex justify-center">
-                        <img :src="slotProps.data.image" :alt="slotProps.data.name" class="w-[15rem] h-[10rem] rounded" />
+                        <img :src="slotProps.data.image" :alt="slotProps.data.name" class="w-full h-[15rem] rounded" />
                     </div>
                     <div class="w-full text-center">
                         <h4 class="mb-1">{{ slotProps.data.name }}</h4>

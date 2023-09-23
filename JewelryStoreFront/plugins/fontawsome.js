@@ -9,7 +9,7 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope,faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope,faPhone,faBars } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
   faUser,
@@ -19,7 +19,8 @@ library.add(
   faInstagram,
   faLinkedin,
   faEnvelope,
-  faPhone
+  faPhone,
+  faBars
 );
 
 export default defineNuxtPlugin((nuxtApp) => {

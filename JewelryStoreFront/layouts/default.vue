@@ -1,9 +1,9 @@
 
 <template>
-  <div>
+  <div class="relative w-full"> 
     <TopHeader />
-    <slot />
-    <Footer />
-    
+    <Navbar/>
+    <slot/>
+    <Footer  class="absolute bottom-[-20rem]"/>
   </div>
 </template>

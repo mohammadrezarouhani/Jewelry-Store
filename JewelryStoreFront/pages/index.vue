@@ -9,5 +9,5 @@ definePageMeta({
 <template>
     <!-- <Gallery/> -->
     <ProductCarousel/>
-    <ProductsCard/>
+    <ProductContainer/>
 </template>
