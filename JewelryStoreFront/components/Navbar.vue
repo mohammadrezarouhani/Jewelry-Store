@@ -53,8 +53,8 @@
             class="flex gap-[.5rem] justify-center cursor-pointer items-center hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:p-2 [&.active]:text-black/90 lg:mb-0 lg:pr-2 text-[1.2rem] text-amber-200"
             data-te-nav-item-ref
           >
+            <span>دسته بندی</span>
             <font-awesome-icon :icon="['fas', 'bars']" />
-            دسته بندی
           </li>
 
           <li
@@ -87,7 +87,7 @@
               class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:p-2 [&.active]:text-black/90"
               to="/prices"
             >
-              سیایت گذاری قیمت ها
+              سیاست گذاری قیمت ها
             </NuxtLink>
           </li>
           <li

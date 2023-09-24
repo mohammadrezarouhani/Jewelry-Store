@@ -6,6 +6,7 @@ import Carousel from 'primevue/carousel';
 import Tag from "primevue/tag";
 import Galleria from "primevue/galleria";
 import Card from "primevue/card";
+import Checkbox from "primevue/checkbox";
 
 export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.use(PrimeVue, { ripple: true });
@@ -15,5 +16,6 @@ export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.component("Tag", Tag);
     nuxtApp.vueApp.component("Galleria", Galleria);
     nuxtApp.vueApp.component("Card",Card)
+    nuxtApp.vueApp.component("Checkbox",Checkbox)
     //other components that you need
 });
