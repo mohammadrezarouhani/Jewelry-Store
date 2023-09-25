@@ -7,9 +7,17 @@ import {
   faCaretDown,
   faCartPlus,
   faLocationDot,
+  faHeart,
+  faSuitcase,
+  faComment,
 } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope,faPhone,faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faPhone,
+  faBars,
+  faPenToSquare,
+} from "@fortawesome/free-solid-svg-icons";
 
 library.add(
   faUser,
@@ -20,7 +28,11 @@ library.add(
   faLinkedin,
   faEnvelope,
   faPhone,
-  faBars
+  faBars,
+  faPenToSquare,
+  faHeart,
+  faSuitcase,
+  faComment
 );
 
 export default defineNuxtPlugin((nuxtApp) => {

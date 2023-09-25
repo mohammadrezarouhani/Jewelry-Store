@@ -49,18 +49,26 @@ watch(searchBrand, () => {
 });
 </script>
 <template>
+    {{ selectedKey }}
   <div class="flex flex-col gap-[1rem] p-2.5">
     <!-- Catagory -->
-    <div class="card flex flex-col justify-content-center bg-white rounded-xl shadow-xl p-2">
+    <div
+      class="card flex flex-col justify-content-center bg-white rounded-xl shadow-xl p-2"
+    >
       <h1 class="text-center text-xl font-bold">دسته بندی</h1>
       <Tree
         v-model:selectionKeys="selectedKey"
         :value="nodes"
+        :pt="{
+          togglerIcon: ({ props, state, context }) => ({
+            class: context.expanded ? 'rotate-0' : 'rotate-180'
+          }),
+        }"
         :filter="true"
         filterMode="lenient"
         selectionMode="checkbox"
         class="w-full md:w-30rem"
-        style="background-color: inherit; border: none;"
+        style="background-color: inherit; border: none"
       ></Tree>
     </div>
 
@@ -87,7 +95,9 @@ watch(searchBrand, () => {
     </div>
 
     <!-- Brand filter -->
-    <div class="border p-2 max-h-[30rem] overflow-y-auto overflow-x-hidden bg-white rounded-xl shadow-xl p-2">
+    <div
+      class="border p-2 max-h-[30rem] overflow-y-auto overflow-x-hidden bg-white rounded-xl shadow-xl p-2"
+    >
       <h1 class="text-center text-xl font-bold">برند</h1>
       <div class="p-1">
         <SearchInput v-model="searchBrand" />

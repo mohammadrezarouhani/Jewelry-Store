@@ -5,8 +5,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
+    [
+      "@pinia/nuxt",
+      {
+        autoImports: ["defineStore", "definePiniaStore","storeToRefs"],
+      },
+    ],
     ["@nuxtjs/tailwindcss"],
-
     [
       "@nuxtjs/google-fonts",
       {
@@ -23,6 +28,7 @@ export default defineNuxtConfig({
       },
     ],
   ],
+
   css: [
     "~/assets/css/main.css",
     "primevue/resources/themes/lara-light-blue/theme.css",
@@ -32,4 +38,8 @@ export default defineNuxtConfig({
   build: {
     transpile: ["primevue"],
   },
+
+  imports:{
+    dirs:['store'],
+  }
 });
