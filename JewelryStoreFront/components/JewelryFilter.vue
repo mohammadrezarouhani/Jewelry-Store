@@ -1,5 +1,15 @@
 <!-- @format -->
 <script setup>
+// Catagory
+import { NodeService } from "../services/NodeService";
+
+const nodes = ref(null);
+const selectedKey = ref(null);
+
+onMounted(() => {
+  NodeService.getTreeNodes().then((data) => (nodes.value = data));
+});
+
 const carratFilter = ref([
   {
     carrat: "carrat18",
@@ -21,15 +31,6 @@ const initialBrand = [
   { brand: "pasrsis", name: "پارسیس گُلد", checked: false },
   { brand: "irshemsh", name: "ایران شمش", checked: false },
   { brand: "atlas", name: "ناب فلز اطلس", checked: false },
-  { brand: "pamp", name: "PAMP", checked: false },
-  { brand: "emirate", name: "Emirates Gold", checked: false },
-  { brand: "royal", name: "Royal Mint", checked: false },
-  { brand: "perth", name: "Perth Mint", checked: false },
-  { brand: "baird", name: "Baird & Co", checked: false },
-  { brand: "heraeus", name: "Heraeus", checked: false },
-  { brand: "metalor", name: "Metalor", checked: false },
-  { brand: "umicore", name: "Umicore", checked: false },
-  { brand: "valcambi", name: "Valcambi", checked: false },
 ];
 
 const brandFilter = ref(initialBrand);
@@ -49,6 +50,20 @@ watch(searchBrand, () => {
 </script>
 <template>
   <div class="flex flex-col gap-[1rem] p-2.5">
+    <!-- Catagory -->
+    <div class="card flex flex-col justify-content-center bg-white rounded-xl shadow-xl p-2">
+      <h1 class="text-center text-xl font-bold">دسته بندی</h1>
+      <Tree
+        v-model:selectionKeys="selectedKey"
+        :value="nodes"
+        :filter="true"
+        filterMode="lenient"
+        selectionMode="checkbox"
+        class="w-full md:w-30rem"
+        style="background-color: inherit; border: none;"
+      ></Tree>
+    </div>
+
     <!-- carrat filter -->
     <div class="border p-2 bg-white rounded-xl shadow-xl p-2">
       <h1 class="text-center text-xl font-bold">عیار</h1>
@@ -97,15 +112,15 @@ watch(searchBrand, () => {
     </div>
 
     <!-- weight -->
-    <div class="bg-white rounded-xl shadow-xl p-2">
-      <h1 class="text-center text-xl font-bold ">وزن(گرم)</h1>
+    <div class="bg-white rounded-xl shadow-xl p-4">
+      <h1 class="text-center text-xl font-bold p-2">وزن(گرم)</h1>
       <InputText
         v-model.number="weight"
         class="w-full h-8"
       />
       <Slider
         v-model="weight"
-        class="w-full "
+        class="w-full"
       />
     </div>
   </div>

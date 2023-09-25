@@ -3,9 +3,11 @@
 <template>
   <div class="container flex flex-col w-full h-full gap-[2rem] p-[1rem]">
     <div class="products flex flex-row">
-      <div class="basis-1/5">
+      <div class="basis-1/4">
         <h1 class="text-2xl font-bold p-[1rem]">فیلتر ها</h1>
-        <GoldFilterSet/>
+        <!-- <GoldFilterSet/> -->
+        <!-- <CoinFilterset/> -->
+        <JewelryFilter/>
       </div>
 
       <div class="basis-full gap-[2rem]">
